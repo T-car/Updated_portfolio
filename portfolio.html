@@ -4,61 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Adding Bootstrap and Google Fonts-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
 </head>
+
 <body>
-    <!--Header with Name and Navigation-->
-    <header>
-        <div class="wrapper">
-            <h1>Tom Carlin</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
+    <!--Style for Page-->
+    <style>
+        .container {
+            font-family: 'Abel', sans-serif;
 
-        </div>
-    </header>
+        }
+        h1 {
+            margin-bottom: 0px;
+            color: #17a2b8;
 
-    <!--Portfolio images-->
-    <div class="wrapper">
-        <section id="port">
-            <h2>My Portfolio</h2>
-
-            <div class="portfolio-content" id="portfolio1">
-                <h4>Portfolio 1</h4>
-            </div>
-
-            <div class="portfolio-content" id="portfolio2">
-                <h4>Portfolio 2</h4>
-            </div>
-
-            <div class="portfolio-content" id="portfolio3">
-                <h4>Portfolio 3</h4>
-            </div>
-
-            <div class="portfolio-content" id="portfolio4">
-                <h4>Portfolio 4</h4>
-            </div>
-
-            <div class="portfolio-content" id="portfolio5">
-                <h4>Portfolio 5</h4>
-            </div>
+        }
+        .nav-link {
+            margin-top: 10px;
+            padding: 10px 10px 10px 10px;
+            color: #17a2b8;
             
-        </section>
+        } 
 
+        .col-sm-6 {
+            border-bottom:1px solid #17a2b8;
+
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 25px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #17a2b8;
+            border-top: 1px solid #17a2b8;
+        }
+
+        .btn {
+            background-color: #17a2b8;
+            border: none;
+        }
+
+        .card {
+            margin:20px 10px 20px 10px;
+            display: block;
+            width: 100%;
+        }
+
+        a[href^="mailto:"]
+        { 
+            color: #17a2b8;
+
+        }
+            
+        
+    </style>
+
+    <!--Nav Bar-->
+    <div class="container">
+        <div class="row" id="row-1">
+            <div class="col-sm-6">
+                <h1 class="header">Tom Carlin</h1>
+            </div>
+            <div class="col-sm-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<!--Portfolio Cards from Bootstrap-->
+<div class=row>
+<div class=col-md-4>
+<div class="card" style="width: 18rem;">
+        <img src="Assets/images/Portfolio_Pic.jpg" class="card-img-top" alt="Portfolio 1">
+            <div class="card-body">
+                <h5 class="card-title">Portfolio 1</h5>
+                <p class="card-text">orem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis necessitatibus sunt harum iste alias, ipsa obcaecati? Illum, eum mollitia explicabo possimus animi, quidem vero consequuntur at, eaque dolore error.</p>
+                <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+                </div>
+                </div>
     </div>
 
+    <div class=col-md-4>
+    <div class="card" style="width: 18rem;">
+        <img src="Assets/images/Portfolio_Pic2.jpg" class="card-img-top" alt="Portfolio 2">
+            <div class="card-body">
+                <h5 class="card-title">Portfolio 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis necessitatibus sunt harum iste alias, ipsa obcaecati? Illum, eum mollitia explicabo possimus animi, quidem vero consequuntur at, eaque dolore error.</p>
+                <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+            </div>
+            </div>
 
-    <!-- Footer-->
+        </div>
+
+    <div class=col-md-4>
+    <div class="card" style="width: 18rem;">
+        <img src="Assets/images/Portfolio_Pic3.jpg" class="card-img-top" alt="Portfolio 3">
+            <div class="card-body">
+                <h5 class="card-title">Portfolio 3</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus repellat qui quidem odio libero nisi vel doloribus blanditiis perspiciatis, quod eum minus natus? Excepturi a distinctio officia doloribus rerum!</p>
+                <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    <div class=row>
+        <div class=col-md-4>
+        <div class="card" style="width: 18rem;">
+                <img src="Assets/images/Portfolio_Pic.jpg" class="card-img-top" alt="Portfolio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio 1</h5>
+                        <p class="card-text">orem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis necessitatibus sunt harum iste alias, ipsa obcaecati? Illum, eum mollitia explicabo possimus animi, quidem vero consequuntur at, eaque dolore error.</p>
+                        <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+                        </div>
+                        </div>
+            </div>
+        
+            <div class=col-md-4>
+            <div class="card" style="width: 18rem;">
+                <img src="Assets/images/Portfolio_Pic2.jpg" class="card-img-top" alt="Portfolio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis necessitatibus sunt harum iste alias, ipsa obcaecati? Illum, eum mollitia explicabo possimus animi, quidem vero consequuntur at, eaque dolore error.</p>
+                        <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+                    </div>
+                    </div>
+        
+                </div>
+        
+            <div class=col-md-4>
+            <div class="card" style="width: 18rem;">
+                <img src="Assets/images/Portfolio_Pic3.jpg" class="card-img-top" alt="Portfolio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio 3</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus repellat qui quidem odio libero nisi vel doloribus blanditiis perspiciatis, quod eum minus natus? Excepturi a distinctio officia doloribus rerum!</p>
+                        <a href="https://github.com/T-car" class="btn btn-primary">Github Repository</a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+
     <footer>
-        &copy; 2018 Tom Carlin 
+        <div class="row"> 
+            <div class="col-md-12" id="footer"><a href = "mailto: thomasrcarlin@gmail.com">thomasrcarlin@gmail.com</a></div>
+        </div>
+        <!--Linked in-->
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     </footer>
 
+
+
 </body>
-  
+</html>

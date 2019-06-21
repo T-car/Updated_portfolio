@@ -4,53 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap, CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
 </head>
 
 <body>
-    <!--Header with Name and Navigation-->
-    <header>
-        <div class="wrapper">
-            <h1>Tom Carlin</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
+    <!--Adding Style to the page-->
+    <style>
 
-        </div>
-    </header>
+        .container {
+            font-family: 'Abel', sans-serif;
 
-    <!--Form Elements-->
-    <div class="wrapper">
-        <section id="Form">
-            <h2>Contact</h2>
+        }
+        h1 {
+            margin-bottom: 0px;
+            color: #17a2b8;
+
+        }
+        .nav-link {
+            margin-top: 10px;
+            padding: 10px 10px 10px 10px;
+            color: #17a2b8;
+            
+        } 
+
+        .col-sm-6 {
+            border-bottom:1px solid #17a2b8;
+
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 40px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #17a2b8;
+            border-top: 1px solid #17a2b8;
+        }
+
+        .form-group {
+            margin-top: 40px;
         
-            <Form>
-                <label for="name" class="small_input">Name</label>
-                <input type="text">
+        }
+        
+        </style>
+<!--Nav Bar-->
+        <div class="container">
+            <div class="row" id="row-1">
+                <div class="col-sm-6">
+                    <h1 class="header">Tom Carlin</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <!--Adding Form from Bootstrap-->
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
 
-                <label for="email" class="small_input">Email</label> 
-                <input type="email">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comment </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
 
-                <label for="message"class="large_input">Message</label>
-                <input type="text">
-
-                <button type="submit">Submit</button>
-            </Form>
-
-            </section>
-    </div>
-
-    <!-- Footer-->
-    <footer>
-        &copy; 2018 Tom Carlin 
-    </footer>
-
-</body>
-</html>
+            <button type="button" class="btn btn-info">Submit</button>
+        </form>
+        
+        <footer>
+            <div class="row"> 
+                <div class="col-md-12" id="footer"><a href = "mailto: thomasrcarlin@gmail.com">thomasrcarlin@gmail.com</a></div>
+            </div>
+          
+        </footer>
+    </body>
+    </html>

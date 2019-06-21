@@ -4,50 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tom Carlin|About</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+    <!--Adding Bootstrap and Google Fonts-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <title>Tom Carlin | About Me</title>
 </head>
 <body>
-    <!--Header with Name and Navigation-->
-    <header>
-        <div class="wrapper">
-            <h1>Tom Carlin</h1>
+    <!--Creating Style for the page-->
+<style>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+    .container {
+        font-family: 'Abel', sans-serif;
+
+    }
+    h1 {
+        margin-bottom: 0px;
+        color: #17a2b8;
+
+    }
+    .nav-link {
+        margin-top: 10px;
+        padding: 10px 10px 10px 10px;
+        color: #17a2b8;
+        
+    } 
+
+    .col-sm-6 {
+        border-bottom:1px solid #17a2b8;
+
+    }
+
+    #footer {
+        text-align: center;
+        margin-top: 25px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #17a2b8;
+        border-top: 1px solid #17a2b8;
+    }
+
+    .btn {
+        background-color: #17a2b8;
+        border: none;
+    }
+
+    #profile-image {
+            width: 100%;
+            height: auto;
+            border: 10px transparent;
+    }
+    
+    .lead {
+        margin: 25px;
+    }
+
+    .jumbotron {
+        margin-top: 25px;
+    }
+    </style>
+
+<!--Nav bar-->
+    <div class="container">
+        <div class="row" id="row-1">
+            <div class="col-sm-6">
+                <h1 class="header">Tom Carlin</h1>
+            </div>
+            <div class="col-sm-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-
+            </div>
         </div>
-    </header>
+<!--Title and Profile Pic-->
+        <div class="jumbotron">
+            <div class="row 1">
+                <div class="col-sm-12">
+                     <h2 class="display-4">About Me</h2>
+            </div>
+            <div class="row 2">
+                <div class="col-sm-5">
+                    <div id="profile-image">
+                    <img id="main-image" src="assets/images/Profile_Pic.png" alt="Tom Carlin" height="300">
+                </div>
 
-    <!--Bio and pic-->
-    <div class="wrapper">
-        <section id="Bio">
-            <h2>About Me</h2>
+                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="carlintom"><a class="LI-simple-link" href='https://www.linkedin.com/in/carlintom?trk=profile-badge'>LinkedIn Profile</a></div>
+            </div>
+            <!--Adding About Me details-->
+                <div class="col-sm-7">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto soluta autem rem, odit dolore dolor hic praesentium dolorum perferendis iure magnam est consequuntur saepe quaerat illum ducimus provident cumque?.</p>
+                     <hr class="my-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cupiditate perspiciatis, recusandae, hic eius corporis consectetur porro vel veniam impedit alias libero deserunt, quis facere. Itaque debitis vel delectus modi!.</p>
+                    <a class="btn btn-primary btn-lg" href="https://github.com/T-car" role="button">Visit my Github</a>
+                    <a class="btn btn-primary btn-lg" href="https://github.com/T-car" role="button">See my Resume</a>
+                </div>
+            </div>
+        </div>    
+    </div> 
 
-            <img src="assets/images/Profile_Pic.png" alt="Pic of Me" class="images"/>
-            
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro veniam! Amet quia reprehenderit excepturi ea dicta, laborum at ut molestiae eius culpa labore corporis eveniet quas voluptatem repellat fugiat?</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsam eligendi cupiditate libero. Corporis, doloribus voluptates? Accusamus error nisi at placeat iste rem ullam. Voluptate alias accusamus omnis doloribus assumenda.</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsam eligendi cupiditate libero. Corporis, doloribus voluptates? Accusamus error nisi at placeat iste rem ullam. Voluptate alias accusamus omnis doloribus assumenda.</p>
-
-            </section>
-
-    </div>
-
-
-    <!-- Footer-->
     <footer>
-        &copy; 2018 Tom Carlin 
-    </footer>
-
+      <div class="row"> 
+          <div class="col-md-12" id="footer"><a href = "mailto: thomasrcarlin@gmail.com">thomasrcarlin@gmail.com</a></div>
+      </div>
+   
+  </footer>
 </body>
-  
+</html>
